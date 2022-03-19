@@ -8,6 +8,10 @@ import java.util.List;
 public class GO {
 
 
+
+
+
+
     public static void main(String[] args) {
        List<Contact> ls = new ArrayList<>();
 
