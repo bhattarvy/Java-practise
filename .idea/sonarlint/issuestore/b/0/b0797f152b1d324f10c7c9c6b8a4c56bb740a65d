@@ -1,0 +1,13 @@
+
+K
+java:S1854"5Remove this useless assignment to local variable "y".(œ¯÷¦
+S	java:S106"9Replace this use of System.out or System.err by a logger.(—¬÷¡ûÿÿÿÿ
+<
+java:S1481"&Remove this unused "y" local variable.(œ¯÷¦
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍþÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÈŒÉ’øÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(Ø”Ÿï
+R
+java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úýÿÿÿÿ8¯‹•ú/
+Y
+java:S3518"CMake sure this expression can't be zero before doing this division.(œ¯÷¦
