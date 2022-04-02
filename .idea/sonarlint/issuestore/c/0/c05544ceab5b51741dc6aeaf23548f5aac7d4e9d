@@ -1,0 +1,11 @@
+
+M
+java:S1611"2Remove the parentheses around the "name" parameter(ĞÚùÖûÿÿÿÿ
+G
+java:S1602",Remove useless curly braces around statement(ĞÚùÖûÿÿÿÿ
+[
+java:S1612"@Replace this lambda with method reference 'System.out::println'.(ĞÚùÖûÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(«‹Îõ
+S
+java:S1128"8Remove this unused import 'java.util.function.Consumer'.(Ì†ƒÔùÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø˜ûşÿÿÿÿ
