@@ -19,3 +19,11 @@ T
 $src/main/java/thread/ThreadMain.java,5/4/5428378b08cfc3d8e2dd42a9b1a21c137cecbde7
 W
 'src/main/java/Java8/ForEachExample.java,c/0/c05544ceab5b51741dc6aeaf23548f5aac7d4e9d
+O
+src/main/java/Java8/Stream.java,1/6/16aaedc08c597bb76dd5701b4da2053b1c407809
+Y
+)src/main/java/Java8/LambdaExpression.java,2/9/29cbf73f560383c838963cf0e62d8071b138d24d
+Q
+!src/main/java/thread/Thread1.java,e/e/eefbd1d622c5011bcd779a238d0c6f37180572c5
+W
+'src/main/java/leet/linkedlist/Main.java,8/1/813720cfa5eeb8e8b40ffd0e57906ecb38628367

@@ -24,8 +24,33 @@ public class Main {
         System.out.println(countEven);
     }
 
+    public static void solve2220() {
+        int start , end;
+        start=sc.nextInt();
+        end =sc.nextInt();
+
+        int count =0;
+        while(start>0 || end>0) {
+            if((start&1) != (end&1)){
+                count++;
+            }
+
+            start=(start>>1);
+            end>>=1;
+            System.out.println(start+" "+end);
+        }
+        System.out.println(count);
+
+        /*
+        * 10 7
+        * 3
+        *
+        *
+        * */
+    }
+
     public static void main(String[] args) {
-        solve2180();
+        solve2220();
 
     }
 
