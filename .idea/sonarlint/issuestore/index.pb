@@ -9,8 +9,6 @@ L
 src/main/java/random/GO.java,2/0/204677bf97205875cf1e302ac9ecf847a781d347
 U
 %src/main/java/syntaxpratise/main.java,e/c/ec1dd9df851931d67d7e0b1d9e29d498769a674c
-<
-build.gradle,f/0/f07866736216be0ee2aba49e392191aeae700a35
 `
 0src/main/java/learnexceptions/MainException.java,4/4/44d4b63bc8258df72a3f170c137e687615b5849e
 ]
