@@ -28,6 +28,17 @@ dependencies {
     compileOnly('org.projectlombok:lombok:1.18.8')
     implementation("net.htmlparser.jericho:jericho-html:3.1")
     annotationProcessor('org.projectlombok:lombok:1.18.8')
+    implementation 'io.github.openfeign:feign-okhttp:9.3.1'
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.13.0'
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.0.1'
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+    implementation 'org.slf4j:slf4j-api:1.7.36'
+
+
+
+
 
 
 
