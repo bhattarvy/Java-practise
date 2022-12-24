@@ -7,10 +7,20 @@ public class ThreadMain {
         System.out.println("it is main thread");
 
         Thread threadInst = new Thread1();
-        threadInst.run();
+        threadInst.start();
+        System.out.println(threadInst.getState());
 
 
-        System.out.println("this is main after thread run method");
+        Thread t2 = new Thread("new thread");
+        t2.start();
+        System.out.println(t2.getState());
+
+        new Thread() {
+            @Override
+            public void run() {
+                System.out.println("this is annonymous class thread");
+            }
+        }.start();
 
     }
 }
