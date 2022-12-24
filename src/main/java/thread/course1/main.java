@@ -21,6 +21,7 @@ public class main {
             thread.start();
         } catch (Exception e){
             log.info("Exception :: {}", e);
+            System.out.println("Exception occured");
         }
         System.out.println("Main Thread " + Thread.currentThread().getName() + "Thread Priority : " +
                            Thread.currentThread().getPriority());
