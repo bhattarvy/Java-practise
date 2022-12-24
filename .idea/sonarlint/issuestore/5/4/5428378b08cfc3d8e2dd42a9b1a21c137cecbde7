@@ -1,6 +1,0 @@
-
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(°ûÇıÿÿÿÿ8ËÅî—ú/
-}
-java:S1217
-"`Call the method Thread.start() to execute the content of the run() method in a dedicated thread.(éÚöÓ8”ÃŒ˜ú/
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(µåÃîøÿÿÿÿ8±˜ú/
