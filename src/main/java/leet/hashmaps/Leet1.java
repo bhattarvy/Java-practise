@@ -2,7 +2,7 @@ package leet.hashmaps;
 
 
 
-import javafx.util.Pair;
+import jdk.internal.net.http.common.Pair;
 import lombok.Data;
 
 import java.util.*;
@@ -288,7 +288,7 @@ public class Leet1 {
         Set<String> foodItems = new TreeSet<>();
         Set<Integer> tables = new TreeSet<>();
 
-        Map<Pair<String, String>, Integer> map = new HashMap<>();
+        Map<Pair<String, String>, Integer> map = new HashMap<Pair<String, String>, Integer>();
 
         for(List<String> i : orders) {
             foodItems.add(i.get(2));
@@ -296,9 +296,9 @@ public class Leet1 {
             map.put(new Pair<>(i.get(1),i.get(2)), map.getOrDefault(new Pair<>(i.get(1),i.get(2)),0)+1);
         }
 
-        map.forEach((e,y)->{
+        /*map.forEach((e,y)->{
             System.out.println(e.getKey()+ " " + e.getValue() + " " + y);
-        });
+        });*/
 
         List<String> headers  = new ArrayList<>();
         List<List<String>> ans = new ArrayList<>();

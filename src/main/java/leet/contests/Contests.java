@@ -1,15 +1,265 @@
 package leet.contests;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import org.apache.commons.lang3.ArrayUtils;
+import org.apache.commons.lang3.tuple.Pair;
 import sun.security.util.ArrayUtil;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
+import static java.lang.Math.*;
 import static java.util.Collections.copy;
 import static java.util.Collections.reverseOrder;
 
 public class Contests {
 
+
+    public void solve2521(){
+        int[] nums = new int[];
+        int[] primeNumbers = new int[1001];
+
+        primeNumbers[2]=1;
+        for(int i=2; i<=1001; i++){
+            if(primeNumbers[i]==1){
+                for(int j=2; j*i<=1001; j++){
+                    primeNumbers[j*i]=0;
+                }
+            }
+        }
+
+
+    }
+
+
+    public void solve2520(){
+        long num=121;
+
+        Set<Integer> st = new HashSet<>();
+        long x =num;
+        while(x>0){
+            int y = (int)num%10;
+            if(num%y==0)
+                st.add(y);
+            x/=10;
+        }
+        System.out.println(st.size());
+    }
+    public void solve1254(){
+        int[][] grid = new int[][]{{1,1,1,1,1,1,1,0},{1,0,0,0,0,1,1,0},{1,0,1,0,1,1,1,0},{1,0,0,0,0,1,0,1},{1,1,1,1,1
+                ,1,1,0}};
+
+        int count=0;
+        int[][] vis = new int[grid.length][grid[0].length];
+        for(int i=0; i<grid.length; i++){
+            for(int j=0; j<grid[0].length; j++){
+                if(vis[i][j]==0 && grid[i][j]==0)
+                    if(dfs1254(grid,vis,i,j))
+                        count++;
+            }
+        }
+        System.out.println(count);
+    }
+
+    public boolean dfs1254(int[][] grid, int[][] vis, int i, int j){
+        if(!validCordinates(i,j,grid.length,grid[0].length) || vis[i][j]==1)
+            return true;
+
+        vis[i][j]=1;
+        if(grid[i][j]==1)
+            return true;
+
+        if(cornerCordinates(i,j,grid.length,grid[0].length)){
+            return false;
+        }
+        boolean x = dfs1254(grid, vis, i+1,j);
+        boolean y = dfs1254(grid, vis, i-1,j);
+        boolean u = dfs1254(grid, vis, i,j+1);
+        boolean v = dfs1254(grid, vis, i,j-1);
+
+        return x && y && u && v;
+    }
+
+    public boolean cornerCordinates(int i, int j, int n, int m){
+        return i==0 || i==n-1 || j==0 || j==m-1;
+    }
+
+    public void solve1905(){
+        int[][] grid1 = new int[][]{{1,0,1,0,1},{1,1,1,1,1},{0,0,0,0,0},{1,1,1,1,1},{1,0,1,0,1}};
+        int[][] grid2 = new int[][]{{0,0,0,0,0},{1,1,1,1,1},{0,1,0,1,0},{0,1,0,1,0},{1,0,0,0,1}};
+
+        int n= grid1.length;
+        int m = grid1[0].length;
+        int[][] vis = new int[grid2.length][grid2[0].length];
+
+        Boolean isSubIsland = Boolean.TRUE;
+        int count=0;
+        for(int i=0; i<n; i++){
+            for(int j=0; j<m; j++) {
+                if(grid2[i][j]==1 && vis[i][j]==0) {
+                    if(dfs1905(grid1, grid2, vis, true, i, j))
+                        count++;
+                }
+            }
+        }
+        System.out.println(count);
+    }
+
+    public Boolean dfs1905(int[][] grid1, int[][] grid2, int[][] vis, Boolean isSubIsland, int i, int j) {
+        if(!validCordinates(i,j, grid1.length, grid1[0].length) || vis[i][j]==1) {
+            return true;
+        }
+        vis[i][j] = 1;
+        if(grid2[i][j]==0)
+            return true;
+        if (grid1[i][j]==0)
+            isSubIsland=false;
+
+        Boolean x = dfs1905(grid1, grid2, vis, isSubIsland, i + 1, j);
+        Boolean y = dfs1905(grid1, grid2, vis, isSubIsland, i - 1, j);
+        Boolean u = dfs1905(grid1, grid2, vis, isSubIsland, i, j + 1);
+        Boolean v = dfs1905(grid1, grid2, vis, isSubIsland, i, j - 1);
+
+        return   isSubIsland && x && y && u && v;
+    }
+
+    public void solve1992(){
+
+        int[][] land = new int[][]{{1,0,0},{0,1,1},{0,1,1}};
+        int[][] vis = new int[land.length][land[0].length];
+
+        List<int[]> ans = new ArrayList<>();
+        for(int i=0; i<land.length; i++){
+            for(int j=0; j<land[0].length; j++) {
+                if(land[i][j]==1){
+                    Integer startX=i,startY=i,endX=i,endY=i;
+                    dfs(land,vis,startX,startY,endX,endY,i,j);
+                    ans.add(new int[]{startX,startY,endX,endY});
+                }
+            }
+        }
+        int[][] finalAns = (int[][]) ans.stream().toArray();
+    }
+
+    public void dfs(int[][] land, int [][]vis, Integer startX, Integer startY, Integer endX, Integer endY, int x,int y){
+        if(!validCordinates(x,y,land.length,land[0].length))
+            return;
+        if(vis[x][y]==0 && land[x][y]==1){
+            vis[x][y]=1;
+            if(x<startX){
+                startX=x;startY=y;
+            } else if(x==startX && y<startY){
+                startY=y;
+            }
+
+            if(x>endX)
+            {
+                endX=x;endY=y;
+            } else if(x==endX && y>endY)
+                endY=y;
+
+            dfs(land,vis,startX,startY,endX,endY,x+1,y);
+            dfs(land,vis,startX,startY,endX,endY,x-1,y);
+            dfs(land,vis,startX,startY,endX,endY,x,y+1);
+            dfs(land,vis,startX,startY,endX,endY,x,y-1);
+        } else
+            return;
+    }
+
+    public void solve2512(){
+
+        String[] positive_feedback = new String[]{"smart","brilliant","studious"};
+        String[] negative_feedback = new String[]{"not"};
+        String[] report = new String[]{"this student is studious","the student is smart"};
+        int[] student_id = new int[]{1,2};
+        int k = 2;
+
+        Queue<Pair<Integer,Integer>> queue = new PriorityQueue<>(new Comparator<Pair<Integer, Integer>>() {
+            @Override
+            public int compare(Pair<Integer, Integer> p1, Pair<Integer, Integer> p2) {
+                if(p1.getValue()>p2.getValue())
+                    return 1;
+                if(p1.getValue()==p2.getValue() && p1.getKey()>p2.getKey())
+                    return 1;
+                return 0;
+            }
+        });
+
+        Set<String>  positive = new HashSet<>();
+        Set<String> negative = new HashSet<>();
+
+        positive = Arrays.stream(positive_feedback).distinct().collect(Collectors.toSet());
+        negative = Arrays.stream(negative_feedback).distinct().collect(Collectors.toSet());
+
+        for(int i=0; i<student_id.length; i++ ){
+
+            String t = report[i];
+
+            int count=0;
+            String[] words = t.split(" ");
+            for(String word : words) {
+                if(positive.contains(word))
+                    count+=3;
+                if(negative.contains(word))
+                    count-=1;
+            }
+            if(queue.size()>k){
+                Pair<Integer,Integer> lastItem = queue.peek();
+                if(lastItem.getValue()< count){
+                    queue.poll();
+                    queue.add(lastItem);
+                } else if(lastItem.getValue()==count && lastItem.getKey()>student_id[i]){
+                    queue.poll();
+                    queue.add(Pair.of(student_id[i],count));
+                }
+            } else {
+                queue.add(Pair.of(student_id[i],count));
+            }
+        }
+
+        List<Integer> ans = new ArrayList<Integer>();
+        queue.forEach((e)->{
+            ans.add(e.getKey());
+        });
+        ans.forEach((e)->{
+            System.out.println(e);
+        });
+    }
+
+    public void solve2251(){
+        int[] forts = new int[]{1,0,0,-1,0,0,0,0,1};
+        int maxIndex=-1;
+        int minIndex=Integer.MAX_VALUE;
+        int maxIndexminus1=-1;
+        int minIndexminus1=Integer.MAX_VALUE;
+        for(int i=0; i<forts.length; i++) {
+            if(forts[i]==1){
+                minIndex = min(minIndex,i);
+                maxIndex = min(maxIndex,i);
+            }
+            if(forts[i]==-1){
+                minIndexminus1 = min(minIndexminus1,i);
+                maxIndexminus1 = min(maxIndexminus1,i);
+            }
+        }
+
+        int ans=0;
+        int count=0;
+        for(int i=minIndex; i<=maxIndexminus1; i++)
+        {
+            if(forts[i]==0)
+                count++;
+        }
+        ans=max(ans,count);
+        for(int i=maxIndex; i>=minIndexminus1; i--)
+        {
+            if(forts[i]==0)
+                count++;
+        }
+        ans=max(ans,count);
+
+        System.out.println(ans);
+    }
 
     public void solve2465() {
 
@@ -48,12 +298,11 @@ public class Contests {
         int low=3, high=3, zero=1, one=1;
 
         long mod = (long) (1e9 + 7);
-
         int []dp = new int[100000+1];
         dp[zero]++;
         dp[one]++;
         long count=0;
-        for(int i=1; i<=(Math.min(100000,high)); i++) {
+        for(int i = 1; i<=(min(100000,high)); i++) {
             if(i-zero>=0)
                 dp[i]+=dp[i-zero];
             if(i-one>=0)
@@ -89,7 +338,7 @@ public class Contests {
         for(int i=0; i<tempGrid[0].length; i++) {
             long maxm=0;
             for(int j=0; j<tempGrid.length; j++) {
-                maxm = Math.max(maxm, tempGrid[j][i]);
+                maxm = max(maxm, tempGrid[j][i]);
             }
             ans+=maxm;
         }
@@ -111,7 +360,7 @@ public class Contests {
 
         int ans=0;
         map.forEach((key,value)->{
-            int x = (int)Math.sqrt((double)(key));
+            int x = (int) sqrt((double)(key));
             if(x*x == key) {
                 if(map.containsKey(x))
                     map.put(x,map.get(key)+1);
@@ -123,10 +372,9 @@ public class Contests {
         });
 
         for(Map.Entry<Integer,Integer> e : map.entrySet()){
-            ans= Math.max(e.getValue(),ans);
+            ans= max(e.getValue(),ans);
         }
         System.out.println(ans+1);
-
     }
 
 
@@ -136,7 +384,6 @@ public class Contests {
         int groupSize = 3;
         Map<Integer, Integer > map = new TreeMap<Integer,Integer>();
 
-
         for(int i=0; i<hand.length; i++)
         {
             map.put(hand[i],map.getOrDefault(hand[i],0)+1);
@@ -145,7 +392,6 @@ public class Contests {
         map.forEach((key,value)->{
             System.out.println(key+ "-> "+value);
         });
-
 
         boolean ans= true;
         while(!map.isEmpty()){
@@ -180,7 +426,6 @@ public class Contests {
 
     }
 
-
     public void reverse(int[] arr){
         int i=0;
         while(i<(arr.length-1-i)){
@@ -190,6 +435,7 @@ public class Contests {
             i++;
         }
     }
-
-
+    public boolean validCordinates(int x, int y, int row, int col) {
+        return x>=0 && x<row && y>=0 && y<col;
+    }
 }

@@ -6,8 +6,8 @@ import mapstruct.beans.UserDto;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2022-12-24T12:39:20+0530",
-    comments = "version: 1.5.3.Final, compiler: IncrementalProcessingEnvironment from gradle-language-java-7.1.jar, environment: Java 1.8.0_311 (Oracle Corporation)"
+    date = "2023-01-07T23:33:19+0530",
+    comments = "version: 1.5.3.Final, compiler: IncrementalProcessingEnvironment from gradle-language-java-6.9.jar, environment: Java 11.0.15 (JetBrains s.r.o.)"
 )
 public class UserMapperImpl implements UserMapper {
 

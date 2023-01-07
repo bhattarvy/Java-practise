@@ -1,7 +1,8 @@
 package leet.hashmaps;
 
-import javafx.util.Pair;
+
 import leet.Leet2;
+import org.apache.commons.lang3.tuple.Pair;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -45,7 +46,7 @@ public class Main {
     }
 
 
-    public static void checkPairEquals(){
+    /*public static void checkPairEquals(){
         Pair<Integer,Integer> p1= new Pair<>(3,5);
         Pair<Integer,Integer> p2= new Pair<>(3,5);
         System.out.println(p1.equals(p2));
@@ -57,7 +58,7 @@ public class Main {
         map.forEach((e,v)->{
             System.out.println(e.getKey() + "-> "+ e.getValue()  + " -> " + v);
         });
-    }
+    }*/
 
 
 }

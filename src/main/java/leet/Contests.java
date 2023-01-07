@@ -1,13 +1,24 @@
 package leet;
 
-import jdk.nashorn.internal.ir.CallNode.EvalArgs;
-
-import java.io.LineNumberInputStream;
 import java.util.*;
 import java.util.stream.Collectors;
 
 public class Contests {
 
+
+    public void solve2520(){
+        long num=121;
+
+        Set<Integer> st = new HashSet<>();
+        long x =num;
+        while(x>0){
+            int y = (int)num%10;
+            if(num%y==0)
+                st.add(y);
+            x/=10;
+        }
+        System.out.println(st.size());
+    }
     public void solve2383(){
         int initialEnergy=5;
         int initialExp = 3;

@@ -1,0 +1,246 @@
+Java8/streams/beans/PhoneInfo.java
+ Java8.streams.beans.PhoneInfo
+Java8/streams/StreamsExample.java
+ Java8.streams.StreamsExample
+ Java8.streams.StreamsExample$student
+designpatterns/creational/builder/Main.java
+ designpatterns.creational.builder.Main
+mapstruct/main.java
+ mapstruct.main
+learnexceptions/CustomException1.java
+ learnexceptions.CustomException1
+syntaxpratise/collections/PriorityQueue/Main.java
+ syntaxpratise.collections.PriorityQueue.Main
+ syntaxpratise.collections.PriorityQueue.Main$1
+ syntaxpratise.collections.PriorityQueue.Main$2
+Java8/optional/Student.java
+ Java8.optional.Student
+leet/hashmaps/Main.java
+ leet.hashmaps.Main
+designpatterns/creational/Main.java
+ designpatterns.creational.Main
+leet/string/Main.java
+ leet.string.Main
+Java8/optional/Main.java
+ Java8.optional.Main
+mapstruct/beans/User.java
+ mapstruct.beans.User
+concurrecnyparallesim/beans/ProductInfo.java
+ concurrecnyparallesim.beans.ProductInfo
+learnexceptions/AnotherService.java
+ learnexceptions.AnotherService
+Java8/functionalinterfaces/MethodReferenceExample.java
+ Java8.functionalinterfaces.MethodReferenceExample
+testing/MockitoBasics.java
+ testing.MockitoBasics
+learnexceptions/CustomException2.java
+ learnexceptions.CustomException2
+jackson/JacksonMain.java
+ jackson.JacksonMain
+ jackson.JacksonMain$1
+ jackson.JacksonMain$2
+syntaxpratise/structpractise/ServiceToDalMapper.java
+ syntaxpratise.structpractise.ServiceToDalMapper
+designpatterns/behaivoural/template/FaceBookNetwork.java
+ designpatterns.behaivoural.template.FaceBookNetwork
+Java8/streams/StreamsMapExample.java
+ Java8.streams.StreamsMapExample
+string/Basic.java
+ string.Basic
+testing/ClassToBeTest.java
+ testing.ClassToBeTest
+Java8/functionalinterfaces/BiConsumerExample.java
+ Java8.functionalinterfaces.BiConsumerExample
+leet/hashmaps/Leet1.java
+ leet.hashmaps.Leet1
+ leet.hashmaps.Leet1$NumberContainers
+thread/ThreadMain.java
+ thread.ThreadMain
+ thread.ThreadMain$1
+Java8/Student.java
+ Java8.Student
+leet/Contests.java
+ leet.Contests
+leet/sample/PlayTest.java
+ leet.sample.PlayTest
+TestCode.java
+ TestCode
+Java8/Test.java
+ Java8.Test
+ Java8.Test$Contacts
+ Java8.Test$Phone
+Java8/optional/StudentService.java
+ Java8.optional.StudentService
+leet/linkedlist/Main.java
+ leet.linkedlist.ListNode
+ leet.linkedlist.Main
+Campaign.java
+ Campaign
+Java8/LambdaExpression.java
+ Java8.FunctionalInterface
+ Java8.LambdaExpression
+ Java8.LambdaExpression$1
+syntaxpratise/structpractise/Main.java
+ syntaxpratise.structpractise.Main
+thread/Thread2.java
+ thread.CountDown
+ thread.CountDownThread
+ thread.Thread2
+learnexceptions/ExceptionExample1.java
+ learnexceptions.ExceptionExample1
+common/UuidMain.java
+ common.UuidMain
+jackson/Customer.java
+ jackson.Customer
+jackson/Teacher.java
+ jackson.Teacher
+syntaxpratise/enumspractise/Client.java
+ syntaxpratise.enumspractise.Client
+syntaxpratise/main.java
+ syntaxpratise.main
+ syntaxpratise.main$BaseMailSendRequest
+ syntaxpratise.main$SendMailRequest
+designpatterns/structural/decorator/Main.java
+ designpatterns.structural.decorator.Main
+concurrecnyparallesim/services/ReviewService.java
+ concurrecnyparallesim.services.ReviewService
+leet/graphs/Main.java
+ leet.graphs.Main
+designpatterns/structural/facade/VideoFileReader.java
+ designpatterns.structural.facade.VideoFileReader
+concurrecnyparallesim/services/ProductInfoService.java
+ concurrecnyparallesim.services.ProductInfoService
+concurrecnyparallesim/ExecutorServiceExample.java
+ concurrecnyparallesim.AgentInsight
+ concurrecnyparallesim.ExecutorServiceExample
+leet/Main.java
+ leet.Main
+ leet.Main$1
+ leet.Main$Customer
+concurrecnyparallesim/services/ProductService.java
+ concurrecnyparallesim.services.ProductService
+leet/graphs/Node.java
+ leet.graphs.Node
+Java8/functionalinterfaces/FunctionalExample.java
+ Java8.functionalinterfaces.FunctionalExample
+concurrecnyparallesim/beans/Product.java
+ concurrecnyparallesim.beans.Product
+ concurrecnyparallesim.beans.Product$ProductBuilder
+designpatterns/structural/decorator/decorators/EncryptionDecorator.java
+ designpatterns.structural.decorator.decorators.EncryptionDecorator
+learnexceptions/MainException.java
+ learnexceptions.MainException
+jackson/FakeCustomer.java
+ jackson.FakeCustomer
+designpatterns/structural/facade/MPEGCompressor.java
+ designpatterns.structural.facade.MPEGCompressor
+leet/string/Leet1.java
+ leet.string.Leet1
+common/Main.java
+ common.DealerMaster
+ common.Main
+Java8/functionalinterfaces/ConsumerExample.java
+ Java8.functionalinterfaces.ConsumerExample
+syntaxpratise/structpractise/Mapper.java
+ syntaxpratise.structpractise.Mapper
+leet/dfs/Leet1.java
+ leet.dfs.Leet1
+leet/contests/Contests.java
+ leet.contests.Contests
+ leet.contests.Contests$1
+leet/Leet2.java
+ leet.Leet2
+concurrecnyparallesim/beans/ReviewInfo.java
+ concurrecnyparallesim.beans.ReviewInfo
+designpatterns/behaivoural/template/Network.java
+ designpatterns.behaivoural.template.Network
+leet/graphs/Leet1.java
+ leet.graphs.Leet1
+thread/Thread1.java
+ thread.Thread1
+learnexceptions/Service2.java
+ learnexceptions.Service2
+designpatterns/structural/decorator/decorators/DataSourceDecorator.java
+ designpatterns.structural.decorator.decorators.DataSourceDecorator
+leet/TestClass.java
+ leet.TestClass
+designpatterns/behaivoural/template/Main.java
+ designpatterns.behaivoural.template.Main
+Java8/ForEachExample.java
+ Java8.ForEachExample
+designpatterns/structural/facade/main.java
+ designpatterns.structural.facade.main
+Java8/lambdas/ComparatorLambdaExample.java
+ Java8.lambdas.ComparatorLambdaExample
+ Java8.lambdas.ComparatorLambdaExample$1
+concurrecnyparallesim/Client.java
+ concurrecnyparallesim.Client
+leet/contests/Main.java
+ leet.contests.Main
+Java8/streams/beans/Student.java
+ Java8.streams.beans.Student
+Java8/lambdas/Client.java
+ Java8.lambdas.Client
+ Java8.lambdas.Client$1
+ Java8.lambdas.Client$2
+ Java8.lambdas.Person
+designpatterns/behaivoural/strategy/Main.java
+ designpatterns.behaivoural.strategy.Main
+thread/synchronize/Main.java
+ thread.synchronize.Main
+Java8/Stream.java
+ Java8.Product
+ Java8.Stream
+designpatterns/structural/decorator/decorators/DataSource.java
+ designpatterns.structural.decorator.decorators.DataSource
+random/GO.java
+ random.GO
+designpatterns/structural/decorator/decorators/CompressionDecorator.java
+ designpatterns.structural.decorator.decorators.CompressionDecorator
+leet/set/Main.java
+ leet.set.Main
+concurrecnyparallesim/filehandling/Main.java
+ concurrecnyparallesim.filehandling.Main
+syntaxpratise/Campaign.java
+ syntaxpratise.Campaign
+leet/dfs/Main.java
+ leet.dfs.Main
+random/Contact.java
+ random.Contact
+jackson/StudentMap.java
+ jackson.StudentMap
+designpatterns/creational/builder/Book.java
+ designpatterns.creational.builder.Book
+ designpatterns.creational.builder.Book$BookBuilder
+mapstruct/mapper/UserMapper.java
+ mapstruct.mapper.UserMapper
+designpatterns/structural/decorator/decorators/DecryptionDecorator.java
+ designpatterns.structural.decorator.decorators.DecryptionDecorator
+designpatterns/structural/decorator/decorators/FileDataSource.java
+ designpatterns.structural.decorator.decorators.FileDataSource
+mapstruct/beans/UserDto.java
+ mapstruct.beans.UserDto
+thread/course1/main.java
+ thread.course1.main
+ thread.course1.main$BlockingTask
+ thread.course1.main$NewThread
+designpatterns/behaivoural/template/TwitterNetwork.java
+ designpatterns.behaivoural.template.TwitterNetwork
+learnexceptions/Exception1.java
+ learnexceptions.Exception1
+RestCalls/RestCalls.java
+ RestCalls.RestCalls
+designpatterns/structural/facade/VideoConvertFacade.java
+ designpatterns.structural.facade.VideoConvertFacade
+leet/bst/BinarySearchTree.java
+ leet.bst.BinarySearchTree
+ leet.bst.BinarySearchTree$TreeNode
+oops/Test.java
+ oops.Test
+ oops.TestDemo
+concurrecnyparallesim/filehandling/emlreader/EmlReader.java
+ concurrecnyparallesim.filehandling.emlreader.EmlReader
+syntaxpratise/enumspractise/Apple.java
+ syntaxpratise.enumspractise.Apple
+RestCalls/Main.java
+ RestCalls.Main

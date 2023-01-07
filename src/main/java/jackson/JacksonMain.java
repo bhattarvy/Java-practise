@@ -7,12 +7,13 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.java.Log;
 import lombok.extern.slf4j.Slf4j;
 
+import java.io.IOException;
 import java.util.*;
 
 @Slf4j
 public class JacksonMain {
 
-    public static void main(String[] args) throws JsonProcessingException {
+    public static void main(String[] args) throws IOException {
         Customer customer = new Customer();
         customer.setName("Arvind");
         customer.setStandard("12th");

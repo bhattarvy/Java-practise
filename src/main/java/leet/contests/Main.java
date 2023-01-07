@@ -1,14 +1,16 @@
 package leet.contests;
 
+import java.util.Arrays;
+
 public class Main {
 
 
     public static void main(String[] args) {
 
-
         Contests contests = new Contests();
-        contests.solve846();
-
+        contests.solve2520();
 
     }
+
+
 }
