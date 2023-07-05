@@ -1,0 +1,115 @@
+Requirements
+
+1- Can have mutiple floors
+2- types of vehicle it can accomodate
+3- Each Vehicle type will have seperate Prices
+4- Floors can be added.
+6- Multiple Entry Point and Exit Points
+
+7- Display Board at Each Gate
+    - No of empty spot each type in that floor.
+
+8- Payment at Exit Gate
+
+
+
+
+
+
+Actors and UseCases
+
+
+Admin
+- addFloor
+- removeFloor
+- changeTheNumberOfSlotsForEachType
+- searchVehicleById
+- assignParkingAttendantToGate
+
+
+
+Parking Attendant
+- chargeParkingFee
+- issueTicket
+-
+
+
+ParkingLotApp
+- fillSpot
+- exitSpot
+- updateTheDisplayBoard
+-
+
+
+Entities
+
+ParkingLot
+    - List<Floor>
+
+
+Floor
+    - List<Spot> spots
+    - List<Gate> entryGate
+    - List<Gate> exitGate
+    - DisplayBoard
+
+
+DisplayBoard
+- Map<VehicelType,Integer>
+- entryGate count
+- exitGate count
+
+
+Gate
+- id
+- Attendant
+
+
+Attendant
+- id
+- Gates
+
+
+
+class Vehicle{
+    id,
+    name,
+    ownereName,
+    VehicleType
+}
+
+
+
+enum VehicleType{
+    TWO_WHEELER,FOUR_WHEELER;
+}
+
+
+Ticket
+- id
+- vehicleId
+- issueTime
+- spotType
+- exitTime = null intially
+- FloorId
+- PaymentType
+- isPayed
+
+
+interface PaymentType
+SelfPortal implement PaymentType
+ParkingAttendant implemtn PaymentType
+
+
+
+// Services class
+
+ParkingLotService
+- fillSpot(Vehicle, Floor)
+- emptySpot(floor, ParkingSpot)
+
+
+AttendantService
+- issueTicket(Vehicle)
+- chargeParkignFee(Ticket)
+

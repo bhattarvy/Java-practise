@@ -2,7 +2,6 @@ package Java8;
 
 
 import Java8.streams.StreamsExample;
-import jdk.nashorn.internal.ir.annotations.Ignore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;

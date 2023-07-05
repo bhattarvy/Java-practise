@@ -10,9 +10,9 @@ public class main {
 
     public static void main(String[] args) {
 
-        User user = new User("arvind","8238443");
+        /*User user = new User("arvind","8238443");
         UserMapper userMapper = Mappers.getMapper(UserMapper.class);
         UserDto userDto = userMapper.getUserDto(user);
-        System.out.println(userDto);
+        System.out.println(userDto);*/
     }
 }

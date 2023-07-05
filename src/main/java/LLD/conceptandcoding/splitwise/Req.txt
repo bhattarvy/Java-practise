@@ -1,0 +1,132 @@
+Requirements
+
+
+
+
+
+//Actors and UseCase
+User
+- add non group expenses
+- create group
+- add expensed to group
+    - groupId, Expense
+- see BalanceSheet
+- payment to other user
+
+
+Platform
+- registerUser
+- getPayment
+    - update balance sheet
+
+
+
+// Models
+
+User
+- id
+- name
+- List<Group>
+- BalanceSheet
+
+
+Group
+- id
+- List<User>
+- List<Expenses>
+
+
+Expense
+- id
+- userPaid
+- Amount
+- List<Split>
+- SplitType
+
+
+enum SplitType
+- equal, unequal, percent
+
+
+Split
+- amount
+- userId
+
+
+interface SplitValidator
+- validate()
+
+
+EqualSplitValidator implements SplitValidator
+UnequalSplitValidator implements SplitValidtion
+PercentSplitValidtor implements SplitValidator
+SplitValidatorFatory
+
+
+BalanceSheet
+- Map<User, Balance>
+- List<Expenses>
+- totalGetBack
+- totalOwed
+
+
+Balance
+- getBack
+- owe
+
+
+Platform
+- List<User>
+- List<Groups>
+- List<Expense>
+
+
+// Services
+
+
+PlatformService
+- PlatForm
+- registerUser()
+- addGroup(List<User> > )
+- getUser(userId)
+    return User
+
+
+- payment(user1, user2)
+    - updateBalanceSheetOfBoth()
+
+
+- updateBalanceSheetOfBoth()
+
+
+ExpenseService
+
+- addExpensesNonGroup(userId,  list<User>, amount, List<Split>)
+    - create Expense Object
+    - updateBalanceSheet
+    - updateUserWithNewExpense
+
+
+- addExpensesGroup(userId,  groupId, list<User>, amount, List<Split>)
+    - create Expense Object
+    - updateBalanceSheet
+
+
+
+- createExpense()
+    -
+
+
+
+GroupService
+
+
+- addGroup(List<User>, Group)
+
+-
+
+
+
+UserService
+
+-

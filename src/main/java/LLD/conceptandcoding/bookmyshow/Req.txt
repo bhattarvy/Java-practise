@@ -1,0 +1,127 @@
+// Requirements
+
+- user can select more then one seat ? - yes
+- how many theature per shows ? should be dynamic
+
+
+
+
+
+
+
+// Actors and Usecases
+
+User
+
+
+- register
+
+- search and see all shows
+    - return all show or searched shows
+
+- book a show
+    - select show and theatre
+    - seat select - no of seats - req can be a Map<SeatType, integer>
+    - payment - give paymenet type
+    - confirm - generate booking ticket
+
+
+- past bookings
+
+- future Bookings
+
+- cancel the booking
+    - show select
+    - make seat available
+    - return the payment - cancellation charges
+
+
+Platform
+- notify user when date comes near
+    - last 2 days - can be diff algoruthm - strategy pattern
+
+- add show
+    - increase show theatere (each theatre will have fixed seats)
+
+
+- remove show
+
+- changePricesOfSeat
+
+
+
+
+
+
+
+
+
+
+// Models
+
+User
+- id
+- name
+- List<String> bookingIds
+
+
+Platform
+- List<Show>
+- List<User>
+- List<Bookings>
+- List<Theatre>
+
+
+
+Show
+- id
+- name
+- List<Theatre>
+
+
+
+Theatre
+- id
+- name
+- List<Seat>
+
+
+
+Seat
+- id
+- seatType
+- price
+- isBooked
+
+enum SeatType
+- premium,
+- silver
+- gold
+
+
+Booking
+- id
+- userId
+- showId
+- theatreID
+- noOfSeats
+- bookingPrice
+- isPayment
+- PaymentType
+- bookingDate
+- showDate
+- isCancelled
+
+
+PaymentType
+- Cash, Credit, UPI
+
+
+
+
+
+
+// Services
+
+
+

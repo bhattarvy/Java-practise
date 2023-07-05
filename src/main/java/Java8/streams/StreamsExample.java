@@ -56,7 +56,7 @@ public class StreamsExample {
 
     public void findFirstStream(){
 
-        Student s1 = new Student();
+        /*Student s1 = new Student();
         s1.setName("Arvind");
         s1.setRollNo(123);
         List<PhoneInfo> phoneInfoList = Arrays.asList(new PhoneInfo("123",true), new PhoneInfo("234",true));
@@ -72,7 +72,7 @@ public class StreamsExample {
         System.out.println("-----");
         s1.getPhoneInfoList().forEach((e)->{
             System.out.println(e.toString());
-        });
+        });*/
     }
 
 

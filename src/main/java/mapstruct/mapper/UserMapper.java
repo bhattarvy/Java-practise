@@ -8,7 +8,7 @@ import org.mapstruct.Mapping;
 @Mapper()
 public interface UserMapper {
 
-    @Mapping(target = "name", source = "name")
-    public  UserDto getUserDto(User user);
+    /*@Mapping(target = "name", source = "name")
+    public  UserDto getUserDto(User user);*/
 
 }

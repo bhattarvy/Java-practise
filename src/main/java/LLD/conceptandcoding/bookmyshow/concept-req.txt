@@ -1,0 +1,135 @@
+
+
+// Actor and Usecase
+
+- User
+    - searh
+
+
+// Models
+User
+- id
+- name
+- List<String> BookingIds
+
+
+Movie
+- id
+- name
+
+
+Theatre
+- id
+- List<Screen>
+- List<Shows>
+
+
+Screen
+- id
+- List<Seat>
+
+
+Shows
+- id
+- Movie
+- theatreId
+- ScreenId
+- startDate
+- startTime
+- List<Seat> bookedSeat
+
+
+Booking
+- id
+- Theatre
+- Show
+- Payment
+
+
+Seat
+- no
+- Price
+- isBooked
+
+
+Platform
+- Map<City, Movies>
+
+- List<Movies>
+
+- Map<City, Theatre>
+
+- List<Theatre>
+
+
+
+// Concurreny
+Two Types of locks
+1. Pessimistic
+    - apply lock while reading - that is when u select any seat to see other user can not select it.
+    even when seat is not even booked
+
+2. Optimistic
+    - allow others to read but once its modified then it can not be booked
+    - keep version of seat booking
+
+Use optimistic approach for book my show.
+
+
+we can use redis locking with timer as well. to solve it.
+
+
+
+// Database Desing
+
+User
+- id
+- name
+- email
+
+
+Theatre
+- id
+- name
+
+
+
+Screen
+- id
+- name
+- noOfSeats
+- screenType
+
+
+
+Movie
+- id
+- name
+
+Shows
+- id
+- movieid (FK)
+- theatreid (FK)
+- screenId (FK)
+- startTime
+- endTime
+
+
+Seat
+- id
+- showId(FK)
+- booked
+- price
+
+
+BookingTicket
+- id
+- userId (FK)
+- theatreId (FK)
+- showId (FK)
+- movieId(FK)
+- paymentDone
+- price
+
+
+

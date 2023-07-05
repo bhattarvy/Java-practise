@@ -1,0 +1,53 @@
+
+
+Requirements
+
+- Split Type - equal, exact , percent
+
+- user balance
+    - owes to  - you owes 10 from user2;
+    - owes from - user2 owes 10 from you.
+
+
+- registers
+
+
+
+
+// Actors and UseCases
+
+User
+- register
+- checkBalance
+    - both owes to and owes you
+
+- addSpliteAmongOtherUsers
+    - split type
+
+- payExpenses
+    - clear Expenses if done completely
+    - if partially then update the balance.
+
+-
+
+Platform
+-
+
+// Entities
+
+User
+- id
+- name
+
+
+
+enum SplitType
+- equal, exact, percent
+
+
+
+
+
+
+
+// Services

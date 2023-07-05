@@ -6,9 +6,32 @@ import jdk.internal.net.http.common.Pair;
 import lombok.Data;
 
 import java.util.*;
+import java.util.Map.Entry;
 
 public class Leet1 {
 
+    public static void main(String[] args) {
+
+        Map<Integer,Integer> map = new TreeMap<>((o1,o2)-> o1-o2);
+        map.put(3,1);
+        map.put(1,2);
+        map.put(100,2);
+        map.put(-1,2);
+        map.forEach((k,v)->{
+            System.out.println(k+ " -> " + v);
+        });
+
+
+        Iterator<Map.Entry<Integer,Integer>> iterator = map.entrySet().iterator();
+        while (iterator.hasNext()){
+            Map.Entry<Integer,Integer> entry= iterator.next();
+            System.out.println(entry.getKey() + " " + entry.getValue());
+        }
+
+        for(Map.Entry<Integer,Integer> entry : map.entrySet()){
+            System.out.println(entry.getKey() + " " + entry.getValue());
+        }
+    }
 
     public void solve567() {
         String s1 = "ab",s2="eidbaooo";

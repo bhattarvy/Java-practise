@@ -1,6 +1,5 @@
 package thread.course1;
 
-import jogamp.nativewindow.NWJNILibLoader;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.Console;

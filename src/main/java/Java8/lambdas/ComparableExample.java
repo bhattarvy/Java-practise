@@ -1,4 +1,4 @@
-package syntaxpratise;
+package Java8.lambdas;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -34,6 +34,7 @@ public class ComparableExample implements Comparable<Student>{
        return 0;
     }
 }
+
 
 @Data
 @AllArgsConstructor

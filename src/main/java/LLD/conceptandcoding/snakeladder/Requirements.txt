@@ -1,0 +1,72 @@
+
+Snake Ladder Game
+
+Requirements
+- n number of snakes
+- m numbser of ladders
+- how many players -? can it be more then two
+- winning algorithm - if anyone wins game will stop or run till last player
+
+- How many dices? - more then one?
+
+
+
+Actors
+
+- Snake
+    -
+
+
+- Ladder
+
+
+- Player
+    - rollDice()
+
+
+- System
+    - checkWinninStage()
+    - checkIfSnakeOrLadder()
+    - addSnakes()
+    - add ladder()
+    - addPlayers()
+
+
+
+
+
+
+
+Entities
+- clas Snake
+
+- class Player
+
+- class System
+
+- interface Dice
+
+- class Dice6 implements Dice
+
+- class Dice8 implement Dice
+
+- class Board
+
+
+
+- interface WinningStrategy
+
+- class LastPersonStanding implements WinningStrategy
+
+- class AllPersonFinished implement WinningStrategy
+
+- class AtMostOneWin implement Winning Strategy
+
+
+
+
+
+Alogithsm
+
+Board
+Position[] board = new

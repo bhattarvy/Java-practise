@@ -1,0 +1,83 @@
+// Requirements
+
+- user can search car
+- user can book a car
+- searching in a store?
+
+- pay in advance
+- owners who can register there vehicle
+- vehicleBack
+    - payRemainginAmount
+    - check if any broken part of car - to charge more to user acc.
+
+
+- bookCar
+   - reservation
+
+/*
+    Actors and Actions
+
+    User
+    - register
+    - searchCar
+    - bookCar
+    - cancelCar
+    - pickUpCar
+    - getCarBack
+    - payAdvance
+    - payRemain
+
+
+
+    Platform
+    - Store - addStore, deleteStore,
+    - car - addCar, deleteCar, updateCar
+
+
+
+    Entities
+
+    User
+    - name,address
+
+    Store
+    - storeId
+    - Location
+    - List<Vehicle> vehicles
+
+
+    Location
+    -   int x,y;
+
+
+    Vehicle
+    - vehicleId
+    - VehicleType
+    - VehicleStatus
+    - vechiceleCostPerHour
+    - vehicleCostPerDay
+
+
+    Reservation
+    - vehicleId
+    - userId
+    - scheduledDate
+    - dropDate
+    - Bill
+
+    Bill
+    - paymentAmount
+    - isPaymentDone
+
+
+    enum VehicleType - CAR, BIKE
+    enum VehicleStatus - AVAILABLE, SCHEDULED, PICKED_UP, CANCELED, COMPLETED
+
+
+    PlatForm
+    - List<User> users
+    - List<Store> stores
+
+
+*/
+

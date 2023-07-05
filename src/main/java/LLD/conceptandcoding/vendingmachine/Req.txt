@@ -1,0 +1,67 @@
+Vending Machine ( State Design Pattern and Chain of responsisbility Pattern)
+
+
+Requiremetns
+
+- vending machien will have list of itemss
+- Normal Flow
+    - user insert coins
+    - user select the product
+    - user get the changes
+    - user get the product
+
+- user can cancel in beteween
+    - he will get the refund
+    - machine will get back to idle state
+
+
+Directly apply State Design pattern
+- we have different stats
+- and state gets changed from one state to another on basis of user input
+
+
+
+
+//Models
+
+VendingMachine
+- machineState
+- List<Items>
+- List<Coins> coinsAdded - user added one
+- List<Coins> existingCoins -- for refund
+
+
+Item
+- id
+- price
+
+
+
+interface MachineState
+- selectProduct()
+- cancel()
+- getRefund()
+- dispenseProduct
+
+
+
+
+IdleState implement MachineState
+
+HasMoneyStaet implements MachineState
+- VendingMachine
+SelectionState implements MachineState
+- VendingMachine
+DispenseState implements MachineState
+- VendingMachine
+
+
+
+each State function can change the machine state.
+
+
+
+
+
+
+

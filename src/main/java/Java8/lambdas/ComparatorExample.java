@@ -1,6 +1,4 @@
-package syntaxpratise;
-
-import lombok.experimental.UtilityClass;
+package Java8.lambdas;
 
 import java.util.ArrayList;
 import java.util.Arrays;

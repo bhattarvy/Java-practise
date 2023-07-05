@@ -1,0 +1,47 @@
+
+Elevator Low level Design
+
+Requirements
+
+
+
+
+Questions
+there are types of lifts
+-   where user selects upward or downward from outside the lift and then select the floor
+    where he wants to go.
+
+-   otherone where selects the floor from outside and lift comes and pick and go that particular
+    floor.
+
+-   how many lifts? - 5 liftst
+
+-   if lift going upwards and last user left the lift was at 5th floor and toppest floor is at 10th
+    do we want lift to go upward or downward
+    if at the same time user at 1st floor hit the button will it go downward or upward.
+
+
+
+Actors
+
+ Lift
+   - go upwards
+   - go downwards
+
+User
+   - select floor
+   - open the door
+   - close the door
+
+System
+   -
+
+
+
+Entities
+
+Lift
+- noOfUser
+- direction
+
+

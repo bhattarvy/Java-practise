@@ -13,10 +13,15 @@ syntaxpratise/collections/PriorityQueue/Main.java
  syntaxpratise.collections.PriorityQueue.Main
  syntaxpratise.collections.PriorityQueue.Main$1
  syntaxpratise.collections.PriorityQueue.Main$2
+distributedsystems/zookeeper/LeadElection.java
+ distributedsystems.zookeeper.LeadElection
+ distributedsystems.zookeeper.LeadElection$1
 Java8/optional/Student.java
  Java8.optional.Student
 leet/hashmaps/Main.java
  leet.hashmaps.Main
+LLD/conceptandcoding/splitwiseworkattech/SplitWiseApp.java
+ LLD.conceptandcoding.splitwiseworkattech.SplitWiseApp
 designpatterns/creational/Main.java
  designpatterns.creational.Main
 leet/string/Main.java
@@ -25,6 +30,23 @@ Java8/optional/Main.java
  Java8.optional.Main
 mapstruct/beans/User.java
  mapstruct.beans.User
+LLD/conceptandcoding/parkinglot/ParkingLotApp.java
+ LLD.conceptandcoding.parkinglot.AdminService
+ LLD.conceptandcoding.parkinglot.Attendant
+ LLD.conceptandcoding.parkinglot.AttendantService
+ LLD.conceptandcoding.parkinglot.DisplayBoard
+ LLD.conceptandcoding.parkinglot.Floor
+ LLD.conceptandcoding.parkinglot.Gate
+ LLD.conceptandcoding.parkinglot.ParkingAttendantPay
+ LLD.conceptandcoding.parkinglot.ParkingLot
+ LLD.conceptandcoding.parkinglot.ParkingLotApp
+ LLD.conceptandcoding.parkinglot.ParkingLotService
+ LLD.conceptandcoding.parkinglot.ParkingSpot
+ LLD.conceptandcoding.parkinglot.PaymentType
+ LLD.conceptandcoding.parkinglot.SelfPortalPay
+ LLD.conceptandcoding.parkinglot.Ticket
+ LLD.conceptandcoding.parkinglot.Vehicle
+ LLD.conceptandcoding.parkinglot.VehicleType
 concurrecnyparallesim/beans/ProductInfo.java
  concurrecnyparallesim.beans.ProductInfo
 learnexceptions/AnotherService.java
@@ -33,14 +55,30 @@ Java8/functionalinterfaces/MethodReferenceExample.java
  Java8.functionalinterfaces.MethodReferenceExample
 testing/MockitoBasics.java
  testing.MockitoBasics
+designpatternsudemycourse/creational/Factory.java
+ designpatternsudemycourse.creational.Demo
+ designpatternsudemycourse.creational.Point
+ designpatternsudemycourse.creational.PointFactory
 learnexceptions/CustomException2.java
  learnexceptions.CustomException2
 jackson/JacksonMain.java
  jackson.JacksonMain
  jackson.JacksonMain$1
  jackson.JacksonMain$2
-syntaxpratise/structpractise/ServiceToDalMapper.java
- syntaxpratise.structpractise.ServiceToDalMapper
+Java8/lambdas/ComparableExample.java
+ Java8.lambdas.ComparableExample
+ Java8.lambdas.Student
+LLD/saumyajit/HotelManagementSystemApplication.java
+ LLD.saumyajit.HotelManagementSystemApplication
+ LLD.saumyajit.HotelManagementSystemApplication$Account
+ LLD.saumyajit.HotelManagementSystemApplication$Admin
+ LLD.saumyajit.HotelManagementSystemApplication$Customer
+ LLD.saumyajit.HotelManagementSystemApplication$HotelManagementSystem
+ LLD.saumyajit.HotelManagementSystemApplication$HouseKeeper
+ LLD.saumyajit.HotelManagementSystemApplication$Recipionist
+ LLD.saumyajit.HotelManagementSystemApplication$Room
+syntaxpratise/collections/Map/Main.java
+ syntaxpratise.collections.Map.Main
 designpatterns/behaivoural/template/FaceBookNetwork.java
  designpatterns.behaivoural.template.FaceBookNetwork
 Java8/streams/StreamsMapExample.java
@@ -51,20 +89,50 @@ testing/ClassToBeTest.java
  testing.ClassToBeTest
 Java8/functionalinterfaces/BiConsumerExample.java
  Java8.functionalinterfaces.BiConsumerExample
+LLD/uditagarwal/CabBooking.java
+ LLD.uditagarwal.Cab
+ LLD.uditagarwal.CabBooking
+ LLD.uditagarwal.CabService
+ LLD.uditagarwal.Location
+ LLD.uditagarwal.Rider
+ LLD.uditagarwal.RiderService
+ LLD.uditagarwal.Trip
+ LLD.uditagarwal.TripService
+ LLD.uditagarwal.TripStatus
 leet/hashmaps/Leet1.java
  leet.hashmaps.Leet1
  leet.hashmaps.Leet1$NumberContainers
 thread/ThreadMain.java
  thread.ThreadMain
  thread.ThreadMain$1
+LLD/saumyajit/ParkingLotApplication.java
+ LLD.saumyajit.ParkingLotApplication
+ LLD.saumyajit.ParkingLotApplication$Account
+ LLD.saumyajit.ParkingLotApplication$Admin
+ LLD.saumyajit.ParkingLotApplication$Attendant
+ LLD.saumyajit.ParkingLotApplication$DisplayBoard
+ LLD.saumyajit.ParkingLotApplication$EntranceGate
+ LLD.saumyajit.ParkingLotApplication$ExitGate
+ LLD.saumyajit.ParkingLotApplication$Floor
+ LLD.saumyajit.ParkingLotApplication$FourWheelerSpot
+ LLD.saumyajit.ParkingLotApplication$Gate
+ LLD.saumyajit.ParkingLotApplication$ParkingLot
+ LLD.saumyajit.ParkingLotApplication$ParkingTicket
+ LLD.saumyajit.ParkingLotApplication$Spot
+ LLD.saumyajit.ParkingLotApplication$TwoWheelerSpot
+ LLD.saumyajit.ParkingLotApplication$VehicleInfo
 Java8/Student.java
  Java8.Student
-leet/Contests.java
- leet.Contests
+RestCalls/Main.java
+ RestCalls.Main
+concurrecnyparallesim/executorservice/ExecutorServiceExample.java
+ concurrecnyparallesim.executorservice.ExecutorServiceExample
 leet/sample/PlayTest.java
  leet.sample.PlayTest
-TestCode.java
- TestCode
+Java8/parallelstream/ParallelStreamExample.java
+ Java8.parallelstream.ParallelStreamExample
+LLD/conceptandcoding/bookmyshow/BookMyShowApp.java
+ LLD.conceptandcoding.bookmyshow.BookMyShowApp
 Java8/Test.java
  Java8.Test
  Java8.Test$Contacts
@@ -74,8 +142,6 @@ Java8/optional/StudentService.java
 leet/linkedlist/Main.java
  leet.linkedlist.ListNode
  leet.linkedlist.Main
-Campaign.java
- Campaign
 Java8/LambdaExpression.java
  Java8.FunctionalInterface
  Java8.LambdaExpression
@@ -92,18 +158,34 @@ common/UuidMain.java
  common.UuidMain
 jackson/Customer.java
  jackson.Customer
+interview/Main.java
+ interview.Main
+ interview.Main$Engineer
+ interview.Main$Machine
+ interview.Main$System
 jackson/Teacher.java
  jackson.Teacher
 syntaxpratise/enumspractise/Client.java
  syntaxpratise.enumspractise.Client
+designpatternsudemycourse/solid/SRP.java
+ designpatternsudemycourse.solid.Journal
+ designpatternsudemycourse.solid.JournalDAO
+ designpatternsudemycourse.solid.SRP
 syntaxpratise/main.java
  syntaxpratise.main
  syntaxpratise.main$BaseMailSendRequest
  syntaxpratise.main$SendMailRequest
+LLD/conceptandcoding/elevator/Elevator.java
+ LLD.conceptandcoding.elevator.Car
+ LLD.conceptandcoding.elevator.Elevator
 designpatterns/structural/decorator/Main.java
  designpatterns.structural.decorator.Main
 concurrecnyparallesim/services/ReviewService.java
  concurrecnyparallesim.services.ReviewService
+Java8/streams/StreamsExample2.java
+ Java8.streams.StreamsExample2
+ Java8.streams.StringComparator
+ Java8.streams.Student
 leet/graphs/Main.java
  leet.graphs.Main
 designpatterns/structural/facade/VideoFileReader.java
@@ -123,6 +205,23 @@ leet/graphs/Node.java
  leet.graphs.Node
 Java8/functionalinterfaces/FunctionalExample.java
  Java8.functionalinterfaces.FunctionalExample
+LLD/conceptandcoding/carrental/CarRental.java
+ LLD.conceptandcoding.carrental.Bike
+ LLD.conceptandcoding.carrental.Bill
+ LLD.conceptandcoding.carrental.Car
+ LLD.conceptandcoding.carrental.CarRental
+ LLD.conceptandcoding.carrental.Location
+ LLD.conceptandcoding.carrental.Platform
+ LLD.conceptandcoding.carrental.PlatformService
+ LLD.conceptandcoding.carrental.Reservation
+ LLD.conceptandcoding.carrental.Store
+ LLD.conceptandcoding.carrental.StoreService
+ LLD.conceptandcoding.carrental.User
+ LLD.conceptandcoding.carrental.UserService
+ LLD.conceptandcoding.carrental.VehicelStatus
+ LLD.conceptandcoding.carrental.Vehicle
+ LLD.conceptandcoding.carrental.VehicleService
+ LLD.conceptandcoding.carrental.VehicleType
 concurrecnyparallesim/beans/Product.java
  concurrecnyparallesim.beans.Product
  concurrecnyparallesim.beans.Product$ProductBuilder
@@ -132,6 +231,17 @@ learnexceptions/MainException.java
  learnexceptions.MainException
 jackson/FakeCustomer.java
  jackson.FakeCustomer
+Java8/lambdas/LambdaVariable.java
+ Java8.lambdas.LambdaVariable
+ Java8.lambdas.LambdaVariable$Student
+LLD/SnakeLadder.java
+ LLD.DiceService
+ LLD.LadderPosition
+ LLD.Player
+ LLD.SnakeBoard
+ LLD.SnakeLadder
+ LLD.SnakeLadderService
+ LLD.SnakePosition
 designpatterns/structural/facade/MPEGCompressor.java
  designpatterns.structural.facade.MPEGCompressor
 leet/string/Leet1.java
@@ -160,10 +270,35 @@ thread/Thread1.java
  thread.Thread1
 learnexceptions/Service2.java
  learnexceptions.Service2
+concurrecnyparallesim/CompletableFutureExample.java
+ concurrecnyparallesim.CompletableFutureExample
+ concurrecnyparallesim.HelloWorldService
+LLD/conceptandcoding/snakeladder/SnakeApplication.java
+ LLD.conceptandcoding.snakeladder.Application
+ LLD.conceptandcoding.snakeladder.Board
+ LLD.conceptandcoding.snakeladder.Dice
+ LLD.conceptandcoding.snakeladder.Dice6
+ LLD.conceptandcoding.snakeladder.Dice8
+ LLD.conceptandcoding.snakeladder.DiceService
+ LLD.conceptandcoding.snakeladder.Ladder
+ LLD.conceptandcoding.snakeladder.LadderService
+ LLD.conceptandcoding.snakeladder.Player
+ LLD.conceptandcoding.snakeladder.PlayerService
+ LLD.conceptandcoding.snakeladder.Position
+ LLD.conceptandcoding.snakeladder.Snake
+ LLD.conceptandcoding.snakeladder.SnakeApplication
+ LLD.conceptandcoding.snakeladder.SnakeService
+ LLD.conceptandcoding.snakeladder.SystemService
 designpatterns/structural/decorator/decorators/DataSourceDecorator.java
  designpatterns.structural.decorator.decorators.DataSourceDecorator
 leet/TestClass.java
  leet.TestClass
+syntaxpratise/grokkingjavainterview/Main.java
+ syntaxpratise.grokkingjavainterview.A
+ syntaxpratise.grokkingjavainterview.B
+ syntaxpratise.grokkingjavainterview.Main
+leet/contests/CodeForces.java
+ leet.contests.CodeForces
 designpatterns/behaivoural/template/Main.java
  designpatterns.behaivoural.template.Main
 Java8/ForEachExample.java
@@ -197,6 +332,8 @@ random/GO.java
  random.GO
 designpatterns/structural/decorator/decorators/CompressionDecorator.java
  designpatterns.structural.decorator.decorators.CompressionDecorator
+interviewbitcourse/MainClass.java
+ interviewbitcourse.MainClass
 leet/set/Main.java
  leet.set.Main
 concurrecnyparallesim/filehandling/Main.java
@@ -240,7 +377,13 @@ oops/Test.java
  oops.TestDemo
 concurrecnyparallesim/filehandling/emlreader/EmlReader.java
  concurrecnyparallesim.filehandling.emlreader.EmlReader
+Java8/lambdas/ComparatorExample.java
+ Java8.lambdas.AgeCustomerComparator
+ Java8.lambdas.ComparatorExample
 syntaxpratise/enumspractise/Apple.java
  syntaxpratise.enumspractise.Apple
-RestCalls/Main.java
- RestCalls.Main
+leet/Contests.java
+ leet.Contests
+ leet.Contests$functionInterface
+ leet.CustomComparator
+ leet.Pair

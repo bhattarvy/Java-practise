@@ -4,14 +4,14 @@ import com.sun.org.apache.xpath.internal.operations.Bool;
 import designpatterns.creational.builder.Book;
 import lombok.*;
 
+
 @Data
-@NoArgsConstructor
+@AllArgsConstructor
 @RequiredArgsConstructor
 public class PhoneInfo {
 
-    @NonNull
     private String number;
-    @NonNull
+
     private boolean isPrimary;
     private Boolean checkInfo;
     private Boolean presentInNDNCList = null;
