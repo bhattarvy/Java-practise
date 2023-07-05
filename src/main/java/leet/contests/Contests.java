@@ -15,18 +15,161 @@ import static java.util.Collections.reverseOrder;
 public class Contests {
 
 
-    public void solve2521(){
-        int[] nums = new int[];
-        int[] primeNumbers = new int[1001];
 
+    public void solve1351(){
+
+        int[] prices = new int[]{8,4,6,2,3};
+        Stack<Integer> stack = new Stack<>();
+        int[] ans = new int[prices.length];
+        for(int i=prices.length-1; i>=0; i--){
+            if(stack.isEmpty()){
+                ans[i]=prices[i];
+                stack.push(prices[i]);
+            } else{
+                System.out.println(stack.peek());
+                ans[i]=prices[i]-(stack.peek()>prices[i]?0:stack.peek());
+
+                while (!stack.isEmpty() && stack.peek() >= prices[i]) {
+                    stack.pop();
+                }
+                stack.push(prices[i]);
+            }
+        }
+        for (int i : ans) {
+            System.out.print(i);
+        }
+    }
+
+    public void solve905(){
+        int[] arr = new int[]{1,3,4,2492,2493,3351,1010,3049};
+        Integer[] arr2 = ArrayUtils.toObject(arr);
+       Arrays.sort(arr2, (first, second) -> {
+              if(first%2!=0 && second%2==0)
+                  return 1;
+              else return -1;
+       });
+
+
+
+        for(int i:arr2)
+            System.out.print(i+ " ");
+/*
+        int[] ans = Arrays.stream(arr).boxed().sorted(new Comparator<Integer>(){
+            @Override
+            public int compare(Integer first, Integer second) {
+                if(first%2==0 && second%2!=0)
+                    return -1;
+                return 0;
+            }
+        }).mapToInt((e)->e.intValue()).toArray();
+
+        int pointerEvenNumber =-1;
+        for(int i=0; i<arr.length; i++){
+            if(arr[i]%2==0){
+                pointerEvenNumber=i;
+                break;
+            }
+        }
+        if(pointerEvenNumber!=-1) {
+            for (int i = 0; i < arr.length && pointerEvenNumber<arr.length ; i++) {
+                if (pointerEvenNumber < i && arr[i] % 2 == 1) {
+                    while (pointerEvenNumber < arr.length) {
+                        if (arr[pointerEvenNumber] % 2 == 0 && pointerEvenNumber > i) {pointerEvenNumber = i;
+                        break;}
+                        pointerEvenNumber++;
+                    }
+                }
+                if (pointerEvenNumber < arr.length && arr[i] % 2 == 1) {
+                    int x = arr[i];
+                    arr[i] = arr[pointerEvenNumber];
+                    arr[pointerEvenNumber] = x;
+                    while(pointerEvenNumber<arr.length){
+                        if(arr[pointerEvenNumber]%2==0)
+                            break;
+                        pointerEvenNumber++;
+                    }
+                }
+            }
+        }
+        for (int i : arr) {
+            System.out.print(i+ " ");
+        }*/
+
+
+        /*System.out.println("");
+        for(int i:ans)
+        {
+            System.out.print(i+ " ");
+        }*/
+
+        /*
+
+        for(int i:arr){
+            System.out.println(i);
+        }
+
+        int j=0;
+        for(int i=0; i<arr.length && j<arr.length; i++){
+            if(arr[i]%2==0)
+                continue;
+            else{
+                while(j<arr.length){
+                    if(arr[j]%2==0)
+                        break;
+                    j++;
+                }
+                if(j<arr.length){
+                    int x= arr[i];
+                    arr[i]=arr[j];
+                    arr[j]=x;
+                } else {
+                    break;
+                }
+            }
+        }
+        for (int i : arr) {
+            System.out.println(i+ " ");
+        }*/
+
+
+    }
+
+    public void solve2521(){
+        int[] nums = new int[]{2,4,3,7,10,6};
+        int[] primeNumbers = new int[1001];
+        Arrays.fill(primeNumbers,1);
+
+        primeNumbers[0]=0;
+        primeNumbers[1]=0;
         primeNumbers[2]=1;
-        for(int i=2; i<=1001; i++){
+        for(int i=2; i<1001; i++){
             if(primeNumbers[i]==1){
-                for(int j=2; j*i<=1001; j++){
+                for(int j=2; j*i<1001; j++){
                     primeNumbers[j*i]=0;
                 }
             }
         }
+
+        System.out.println("");
+        for (int i : primeNumbers) {
+            System.out.print(i+ " ");
+        }
+        System.out.println("");
+
+        Set<Integer> st = new HashSet<>();
+
+        for(int i=2; i<1001; i++){
+            if(primeNumbers[i]==1){
+                for(int j=0; j<nums.length; j++){
+                    while(nums[j]%i==0) {
+                        nums[j] /= i;
+                        st.add(i);
+                    }
+                }
+            }
+        }
+        System.out.println("000-89938");
+        System.out.println(st.size());
 
 
     }
